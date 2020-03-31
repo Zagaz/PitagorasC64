@@ -1,6 +1,4 @@
-
 1 print chr$(147)
-2 print "----------------------------------------"
 3 print "pitagoras-c64 - por: andre ranulfo"
 4 print "----------------------------------------"
 5 n1 = 0
@@ -10,10 +8,15 @@
 20 input "digite cateto 2:";n2:print
 21 if n1 = 0 then ?"o numero nao pode ser 0": goto 20
 30 print "a hipotenusa dos catetos";n1; "e";n2;"="; sqr(n1^2+n2^2);".": print
-40 input "fazer outra consulta (s/n)";sn$
+40 print "fazer outra consulta (s/n)"
+45 get sn$ : if sn$ = "" then 45
 50 if sn$ = "s" then 1
-60 if sn$ = "n" then 70
+60 if sn$ = "n" then 64
 62 if sn$ <> "s" then 40
 63 if sn$ <> "n" then 40
-70 print chr$(147) : print "obrigado por testar pitagoras-c64"
+64 print chr$(147)
+65 print "pitagoras-c64 - por: andre ranulfo"
+66 print "----------------------------------------"
+67 print
+70 print "obrigado por testar pitagoras-c64"
 80 end
