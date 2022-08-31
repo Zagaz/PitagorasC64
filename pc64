@@ -1,5 +1,5 @@
 1 print chr$(147)
-3 print "pitagoras-c64 - por: andre ranulfo"
+3 print "pitagoras-c64"
 4 print "----------------------------------------"
 5 n1 = 0
 6 n2 = 0
