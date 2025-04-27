@@ -4,19 +4,19 @@
 5 n1 = 0
 6 n2 = 0
 10 input "type the 1st side length:";n1:print
-11 if n1 = 0 then ?"the number cant be 0": goto 10
-20 input "type the 1st side length:";n2:print
-21 if n1 = 0 then ?"the number cant be 0": goto 20
-30 print "the hypotenuse of the sides";n1; "and";n2;"="; sqr(n1^2+n2^2);".": print
-40 print "do you with to make another consult?" (y/n)"
-45 get yn$ : if yn$ = "" then 45
-50 if sn$ = "y" then 1
-60 if sn$ = "n" then 64
-62 if sn$ <> "y" then 40
-63 if sn$ <> "n" then 40
+11 if n1 = 0 then print "the number can't be 0":goto 10
+20 input "type the 2nd side length:";n2:print
+21 if n2 = 0 then print "the number can't be 0":goto 20
+30 print "the hypotenuse of the sides ";n1;" and ";n2;" = ";sqr(n1^2+n2^2);".":print
+40 print "do you wish to make another consult? (y/n)"
+45 get yn$:if yn$="" then 45
+50 if yn$="y" then goto 1
+60 if yn$="n" then goto 64
+62 goto 40
 64 print chr$(147)
 65 print "pitagoras-c64 - by: andre ranulfo"
 66 print "----------------------------------------"
 67 print
 70 print "thanks for testing pitagoras-c64"
 80 end
+
